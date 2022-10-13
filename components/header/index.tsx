@@ -46,9 +46,15 @@ const Header = () =>{
                     </a>
                 </Link>
             </div>
-            <button className="h-11 w-[168px]  bg-[#185CFF] rounded-md text-white flex items-center">
-                <img className="mx-2.5" src="play.png" alt="play button" width={24} height={24}/>
-                Watch the demo</button>
+            <Link href="/">
+                <a>
+                    <button className="h-11 w-[168px]  bg-[#185CFF] rounded-md text-white flex items-center">
+                        <img className="mx-2.5" src="play.png" alt="play button" width={24} height={24}/>
+                        Watch the demo
+                    </button>
+                </a>
+            </Link>
+
         </div>
     )
 }
