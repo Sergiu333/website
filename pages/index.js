@@ -1,8 +1,10 @@
+import Header from "../components/header";
 
-export default function Home() {
-  return (
-    <div className="text-blue-600">
-      asasasas
-    </div>
-  )
+const Home = () =>{
+    return (
+        <div>
+            <Header/>
+        </div>
+    )
 }
+export default Home;
