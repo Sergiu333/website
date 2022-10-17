@@ -3,6 +3,7 @@ import Ensome from "../components/ensome";
 import ImageBlock from "../components/imageBlock";
 import Newest from "../components/newest";
 import Solutions from "../components/Solutions";
+import Services from "../components/services";
 
 const Home = () =>{
     return (
@@ -12,6 +13,7 @@ const Home = () =>{
             <ImageBlock/>
             <Newest/>
             <Solutions/>
+            <Services/>
         </div>
     )
 }
