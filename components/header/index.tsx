@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Header = () =>{
     return (
-        <div className="container mx-auto py-10 ml-[202px] bg-white flex flex-row gap-36 text-sm items-center">
+        <div className="container mx-auto py-10 pl-[202px] bg-white flex flex-row gap-36 text-sm items-center">
             <Link href="/">
                 <a>
                     <Image

@@ -17,7 +17,7 @@ const ImageBlock = () =>{
                     </button>
                 </a>
             </Link>
-            <div className="relative">
+            <div className="relative bottom-11">
                 <Image
                     src="/img_block.jpg"
                     alt="logo"
