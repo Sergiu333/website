@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import Ensome from "../components/ensome";
 import ImageBlock from "../components/imageBlock";
+import Newest from "../components/newest";
 
 const Home = () =>{
     return (
@@ -8,6 +9,7 @@ const Home = () =>{
             <Header/>
             <Ensome/>
             <ImageBlock/>
+            <Newest/>
         </div>
     )
 }

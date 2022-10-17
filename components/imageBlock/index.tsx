@@ -6,7 +6,7 @@ const ImageBlock = () =>{
         <div className="pt-[90px]">
             <Link href="/">
                 <a>
-                    <button className="absolute left-[1155px] top-[336px] z-50 top-[300px] absolute w-[140px] h-[140px] bg-white rounded-full flex items-center justify-center text-white text-sm leading-6 font-semibold">
+                    <button className="absolute left-[920px] top-[336px] z-50 top-[300px] absolute w-[140px] h-[140px] bg-white rounded-full flex items-center justify-center text-white text-sm leading-6 font-semibold">
                         <div className="bg-[#185CFF] w-[120px] h-[120px] rounded-full flex items-center justify-center">
                             <div className="bg-white w-[104px] h-[104px] rounded-full flex items-center justify-center">
                                 <div className="bg-[#185CFF] w-[102px] h-[102px] rounded-full flex items-center justify-center">
