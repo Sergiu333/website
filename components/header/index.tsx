@@ -3,14 +3,14 @@ import Link from 'next/link'
 
 const Header = () =>{
     return (
-        <div className="container mx-auto py-10 pl-[202px] bg-white flex flex-row gap-36 text-sm items-center">
+        <div className="container mx-auto w-[1110px] py-10 bg-white flex flex-row gap-36 text-sm items-center">
             <Link href="/">
                 <a>
                     <Image
                         src="/logo.png"
                         alt="logo"
-                        width={'170px'}
-                        height={'50px'}
+                        width={170}
+                        height={50}
                     />
                 </a>
             </Link>

@@ -1,6 +1,6 @@
 const Newest = () => {
     return (
-        <div className="pt-[120px] container mx-auto p-[202px]">
+        <div className="pt-[120px] container mx-auto w-[1110px] pb-[202px]">
             <div className="flex flex-row gap-[30px] tracking-[-0,24]">
                 <div className="text-[#292D33] font-['Manrope'] font-extrabold text-[57px] leading-[66px] w-[540px]">
                     The <span className="text-[#185CFF]">newest</span><br/> business analytics platform
