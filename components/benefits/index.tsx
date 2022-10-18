@@ -33,7 +33,7 @@ const Benefits = () => {
     ]
 
     return (
-        <div className="bg-[#F1F6FA]">
+        <div className="bg-[#F1F6FA] pb-[120px]">
             <div className="container mx-auto w-[1110px] flex flex-row gap-[30px]">
                 <div className="grid content-center">
                     <div className="Headline_2_ExtraBold text-[#292D33]">
