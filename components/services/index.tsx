@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Services = () => {
     return (
-        <div className="container mx-auto px-[202px] flex flex-col gap-[50px] mt-[120px]">
+        <div className="container mx-auto w-[1110px] flex flex-col gap-[30px] mt-[120px]">
             <div className="font-['Manrope'] font-extrabold text-[38px] leading-[56px] text-center text-[#292D33]">
                 We provide services that guarantee your success
             </div>
