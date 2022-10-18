@@ -5,6 +5,7 @@ import Newest from "../components/newest";
 import Solutions from "../components/solutions";
 import Services from "../components/services";
 import Benefits from "../components/benefits";
+import Carousel from "../components/Carousel";
 
 const Home = () =>{
     return (
@@ -16,6 +17,7 @@ const Home = () =>{
             <Solutions/>
             <Services/>
             <Benefits/>
+            <Carousel/>
         </div>
     )
 }
