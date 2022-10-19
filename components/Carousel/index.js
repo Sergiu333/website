@@ -32,7 +32,7 @@ const testimonials=[
 
 const Carousel = () => {
     return (
-        <div className="container mx-auto w-[1110px] mt-[120px]">
+        <div className="container mx-auto w-[1110px] mt-[120px] mb-[100px]">
             <div className="text-[#292D33] Headline_2_ExtraBold mb-[50px]">Testimonials </div>
             <div className=" flex flex-row gap-[30x]">
                 <OwlCarousel
@@ -47,7 +47,7 @@ const Carousel = () => {
                 >
                     {testimonials.map(({src, alt, name,ceo,  description}) => {
                         return (
-                            <div className="p-[10px]">
+                            <div className="  p-[10px]">
                                 <div className="flex flex-col p-[35px] shadow-card-3 ml-[30px]">
                                     <div className="flex flex-row gap-[25px]">
                                         <div>
