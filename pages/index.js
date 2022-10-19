@@ -7,6 +7,7 @@ import Services from "../components/services";
 import Benefits from "../components/benefits";
 import Carousel from "../components/Carousel";
 import OurPricing from "../components/ourPricing";
+import OurBlog from "../components/ourBlog";
 
 const Home = () =>{
     return (
@@ -20,6 +21,7 @@ const Home = () =>{
             <Benefits/>
             <Carousel/>
             <OurPricing/>
+            <OurBlog/>
         </div>
     )
 }
