@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ntegral/react-owl-carousel": "^1.0.1",
+    "jquery": "^3.6.1",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-owl-carousel": "^2.3.3",
     "typescript": "^4.8.4"
   },
   "devDependencies": {
