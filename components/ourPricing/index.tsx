@@ -86,7 +86,7 @@ const packs = [
 
 const OurPricing = () => {
     return (
-        <div className="container mx-auto w-[1110px] mb-[100px]">
+        <div className="container mx-auto w-[1110px]">
             <div className="text-[#292D33] Headline_2_ExtraBold mt-[120px] mb-[50px]">Our pricing</div>
             <div className="flex flex-row gap-[30px]">
                 {packs.map(({type, src,srcInverted, price, options}) => {
