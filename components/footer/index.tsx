@@ -32,7 +32,7 @@ const logotypes = [
 const footer_items = [
     {
         title: "Quick link",
-        options: [
+        subtitle: [
             {
                 item: "Home",
                 link: "/"
@@ -69,7 +69,7 @@ const footer_items = [
     },
     {
         title: "Service",
-        options: [
+        subtitle: [
             {
                 item: "Pages",
                 link: "/"
@@ -94,7 +94,7 @@ const footer_items = [
     },
     {
         title: "Cantact info",
-        options: [
+        subtitle: [
             {
                 item: "ensome@info.co.us",
                 link: "/"
@@ -138,59 +138,65 @@ const Footer = () => {
                 </div>
             </div>
             <hr className="text-[#607D94]"/>
-
             <div className="container mx-auto w-[1110px] mt-[50px] grid grid-cols-12">
                 <div className="grid col-span-5 col-start-1">
-                <div className="flex flex-col gap-5">
-                    <div>
-                        <Image
-                            src="/logo_white.png"
-                            alt="logo"
-                            width={141}
-                            height={46}
-                        />
-                    </div>
-                    <div className="Paragraph_3_Regular text-gray">
-                        Ut enim ad minima veniam, quis nostrum <br/> exercitationem ullam corporis
-                        suscipit <br/> laboriosam, nisi ut aliquid ex ea commodi.
-                    </div>
-                    <div className="flex flex-row gap-[15px]">
-                        {logotypes.map(({src, alt}) => {
-                            return (
-                                <Image
-                                    src={src}
-                                    alt={alt}
-                                    width={24}
-                                    height={24}
-                                />
-                            )
-                        })}
+                    <div className="flex flex-col gap-5">
+                        <div>
+                            <Image
+                                src="/logo_white.png"
+                                alt="logo"
+                                width={141}
+                                height={46}
+                            />
+                        </div>
+                        <div className="Paragraph_3_Regular text-gray">
+                            Ut enim ad minima veniam, quis nostrum <br/> exercitationem ullam corporis
+                            suscipit <br/> laboriosam, nisi ut aliquid ex ea commodi.
+                        </div>
+                        <div className="flex flex-row gap-[15px]">
+                            {logotypes.map(({src, alt}) => {
+                                return (
+                                    <Image
+                                        src={src}
+                                        alt={alt}
+                                        width={24}
+                                        height={24}
+                                    />
+                                )
+                            })}
+                        </div>
                     </div>
                 </div>
-                </div>
-
-                {footer_items.map(({title}) => {
+                {footer_items.map(({title, subtitle}) => {
                     return (
                         <div className="grid col-span-2">
                             <div className="flex flex-col text-white mt-2.5 gap-[12px]">
                                 <div className="Headline_6_Bold mb-[31px]">{title}</div>
-                                <div className="Paragraph_3_Regular text-gray">ooo</div>
-                                <div className="Paragraph_3_Regular text-gray">ooo</div>
-                                <div className="Paragraph_3_Regular text-gray">ooo</div>
-                                <div className="Paragraph_3_Regular text-gray">ooo</div>
-                                <div className="Paragraph_3_Regular text-gray">ooo</div>
-                                <div className="Paragraph_3_Regular text-gray">ooo</div>
-                                <div className="Paragraph_3_Regular text-gray">ooo</div>
-                                <div className="Paragraph_3_Regular text-gray">ooo</div>9i
+
+                                {subtitle.map(({item}, index) => {
+                                    return (
+                                        <Link href="/">
+                                            <a>
+                                                <div className="Paragraph_3_Regular text-gray" key={index}>{item}</div>
+                                            </a>
+                                        </Link>
+                                    )
+                                })}
                             </div>
                         </div>
                     );
                 })}
 
-
+            </div>
+            <hr className="text-[#607D94]"/>
+            <div className="container mx-auto w-[1110px] flex flex-row justify-between mt-[34px] pb-[30px]">
+                <div className="Paragraph_3_Regular text-blue-2">Ensome© 2022 All Rights Reserved</div>
+                <div className="flex flex-row gap-[95px]">
+                    <div className="Paragraph_3_Regular text-blue-2">Privacy policy</div>
+                    <div className="Paragraph_3_Regular text-blue-2">Terms of us</div>
+                </div>
             </div>
         </div>
-
     );
 }
 
