@@ -9,6 +9,7 @@ import Carousel from "../components/Carousel";
 import OurPricing from "../components/ourPricing";
 import OurBlog from "../components/ourBlog";
 import Contacts from "../components/contacts";
+import Footer from "../components/footer";
 
 const Home = () =>{
     return (
@@ -24,6 +25,7 @@ const Home = () =>{
             <OurPricing/>
             <OurBlog/>
             <Contacts/>
+            <Footer/>
         </div>
     )
 }
