@@ -186,9 +186,8 @@ const Footer = () => {
                         </div>
                     );
                 })}
-
             </div>
-            <hr className="text-[#607D94]"/>
+            <hr className="text-[#607D94] mt-[50px]"/>
             <div className="container mx-auto w-[1110px] flex flex-row justify-between mt-[34px] pb-[30px]">
                 <div className="Paragraph_3_Regular text-blue-2">Ensome© 2022 All Rights Reserved</div>
                 <div className="flex flex-row gap-[95px]">
