@@ -142,12 +142,16 @@ const Footer = () => {
                 <div className="grid col-span-5 col-start-1">
                     <div className="flex flex-col gap-5">
                         <div>
-                            <Image
-                                src="/logo_white.png"
-                                alt="logo"
-                                width={141}
-                                height={46}
-                            />
+                            <Link href="/">
+                                <a>
+                                    <Image
+                                        src="/logo_white.png"
+                                        alt="logo"
+                                        width={141}
+                                        height={46}
+                                    />
+                                </a>
+                            </Link>
                         </div>
                         <div className="Paragraph_3_Regular text-gray">
                             Ut enim ad minima veniam, quis nostrum <br/> exercitationem ullam corporis
@@ -156,12 +160,16 @@ const Footer = () => {
                         <div className="flex flex-row gap-[15px]">
                             {logotypes.map(({src, alt}) => {
                                 return (
-                                    <Image
-                                        src={src}
-                                        alt={alt}
-                                        width={24}
-                                        height={24}
-                                    />
+                                    <Link href="/">
+                                        <a>
+                                            <Image
+                                                src={src}
+                                                alt={alt}
+                                                width={24}
+                                                height={24}
+                                            />
+                                        </a>
+                                    </Link>
                                 )
                             })}
                         </div>
@@ -191,8 +199,16 @@ const Footer = () => {
             <div className="container mx-auto w-[1110px] flex flex-row justify-between mt-[34px] pb-[30px]">
                 <div className="Paragraph_3_Regular text-blue-2">Ensome© 2022 All Rights Reserved</div>
                 <div className="flex flex-row gap-[95px]">
-                    <div className="Paragraph_3_Regular text-blue-2">Privacy policy</div>
-                    <div className="Paragraph_3_Regular text-blue-2">Terms of us</div>
+                    <Link href="/">
+                        <a>
+                            <div className="Paragraph_3_Regular text-blue-2">Privacy policy</div>
+                        </a>
+                    </Link>
+                    <Link href="/">
+                        <a>
+                            <div className="Paragraph_3_Regular text-blue-2">Terms of us</div>
+                        </a>
+                    </Link>
                 </div>
             </div>
         </div>

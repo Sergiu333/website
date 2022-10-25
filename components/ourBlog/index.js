@@ -43,8 +43,8 @@ const OurBlog = () => {
                     dots
                     nav={true}
                     navText={[
-                        "<div class='back'>back</div>",
-                        "<div class='next'>next</div>"
+                        "<div class='back'><img src='/left_arrow.svg' alt=''></div>",
+                        "<div class='next'><img src='/right_arrow.svg' alt=''></div>"
                     ]}
                 >
                     {testimonials.map(({src, date, title, description}) => {
