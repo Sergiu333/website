@@ -41,13 +41,13 @@ const Carousel = () => {
                     dots
                     nav={true}
                     navText = {[
-                        "<div class='back'>back</div>",
-                        "<div class='next'>next</div>"
+                        "<div class='back'><img src='/left_arrow.svg' alt=''></div>",
+                        "<div class='next'><img src='/right_arrow.svg' alt=''></div>"
                     ]}
                 >
                     {testimonials.map(({src, alt, name,ceo,  description}) => {
                         return (
-                            <div className="  p-[10px]">
+                            <div className="p-[10px]">
                                 <div className="flex flex-col p-[35px] shadow-card-3 ml-[30px]">
                                     <div className="flex flex-row gap-[25px]">
                                         <div>
