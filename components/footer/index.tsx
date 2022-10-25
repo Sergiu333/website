@@ -58,7 +58,7 @@ const footer_items = [
                 link: "/"
             },
             {
-                item: "Services",
+                item: "Index",
                 link: "/"
             },
             {
