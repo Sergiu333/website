@@ -132,10 +132,10 @@ const Custumer = () => {
                     <input
                         className="bg-white border border-[#9497A1] pl-[25px] py-[15px] rounded-l-md text-black w-[320px]"
                         type="text"
-                        placeholder="Your email"/>
+                        placeholder="Search"/>
                     <Link href="/">
                         <a>
-                            <button className="bg-primary w-[125px] h-[54px] text-white rounded-r-md">Send</button>
+                            <button className="bg-primary w-[125px] h-[54px] text-white rounded-r-md">Search</button>
                         </a>
                     </Link>
                 </div>
