@@ -1,12 +1,16 @@
 import HeaderServices from "../../components/headerServices";
 import Footer from "../../components/footer";
+import Customer from "../../components/custumer";
 
-const Serviecs = () =>{
+const Services = () =>{
     return (
        <div>
          <HeaderServices/>
+
+           <Customer/>
+
            <Footer/>
        </div>
     )
 }
-export default Serviecs;
+export default Services;
