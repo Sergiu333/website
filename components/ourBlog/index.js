@@ -89,7 +89,6 @@ const OurBlog = () => {
                             </div>
                         );
                     })}
-
                     {testimonials.map(({src, date, title, description}) => {
                         return (
                             <div className="p-[10px] flec flex-row gap-[30px]">
