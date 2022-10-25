@@ -2,7 +2,7 @@ import HeaderServices from "../../components/headerServices";
 import Footer from "../../components/footer";
 import Customer from "../../components/custumer";
 
-const Services = () =>{
+const Servicessingle = () =>{
     return (
        <div>
          <HeaderServices/>
@@ -13,4 +13,4 @@ const Services = () =>{
        </div>
     )
 }
-export default Services;
+export default Servicessingle;
