@@ -39,6 +39,7 @@ const article = [
         description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure..."
     }
 ]
+
 const ArticleCards = () => {
     return (
         <div className="container mx-auto w-[1110px] my-[120px]">
@@ -80,7 +81,6 @@ const ArticleCards = () => {
                         </div>
                     );
                 })}
-
             </div>
             <div className="flex justify-center">
                 <Link href="/">
