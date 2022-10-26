@@ -1,13 +1,17 @@
 import Header from "../../components/header";
 import Breadcrumd from "../../components/Breadcrumd";
 import HeroBlog from "../../components/heroBlog";
+import ArticleCards from "../../components/articleCards";
+import Footer from "../../components/footer";
 
 const Blog = () =>{
     return (
-        <div className="container mx-auto w-[1110px]">
+        <div>
            <Header/>
             <Breadcrumd/>
             <HeroBlog/>
+            <ArticleCards/>
+            <Footer/>
         </div>
     );
 }
