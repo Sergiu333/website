@@ -33,6 +33,7 @@ const CostomersLogs = () => {
         <div className="container mx-auto w-[1110px] flex flex-row">
             <OwlCarousel
                 autoplay
+                loop={true}
                 items={6}
             >
                 {logs.map(({src}) => {
@@ -47,21 +48,7 @@ const CostomersLogs = () => {
                         </div>
                     );
                 })}
-
-                {logs.map(({src}) => {
-                    return (
-                        <div>
-                            <Image
-                                src={src}
-                                alt="logo"
-                                width={185}
-                                height={132}
-                            />
-                        </div>
-                    );
-                })}
             </OwlCarousel>
-
         </div>
     )
 }
