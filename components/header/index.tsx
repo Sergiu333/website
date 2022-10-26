@@ -35,7 +35,7 @@ const Header = () =>{
                         <div className="">Elements</div>
                     </a>
                 </Link>
-                <Link href="/">
+                <Link href="/Blog">
                     <a>
                         <div className="">Blog</div>
                     </a>
