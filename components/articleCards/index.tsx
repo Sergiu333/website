@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const article = [
     {
@@ -82,9 +83,14 @@ const ArticleCards = () => {
 
             </div>
             <div className="flex justify-center">
-                <button className="mt-[50px] bg-primary px-[25.5px] py-2.5 rounded-md text-white Headline_7_SemiBold">
-                    More articles
-                </button>
+                <Link href="/">
+                    <a>
+                        <button
+                            className="mt-[50px] bg-primary px-[25.5px] py-2.5 rounded-md text-white Headline_7_SemiBold">
+                            More articles
+                        </button>
+                    </a>
+                </Link>
             </div>
         </div>
     );
