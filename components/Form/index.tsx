@@ -41,7 +41,14 @@ const Form = () => {
                 <div className="flex flex-row gap-[47px]">
                     <div className="flex flex-col gap-[5px]">
                         <div className="flex flex-row gap-3">
-                            <div>img</div>
+                            <div>
+                                <Image
+                                src="/mail.png"
+                                alt="Image"
+                                width={15}
+                                height={12.5}
+                                />
+                            </div>
                             <div className="text-black Headline_7_SemiBold">Email</div>
                         </div>
                         <div className="text-gray Paragraph_2_Regular">
@@ -50,7 +57,14 @@ const Form = () => {
                     </div>
                     <div className="flex flex-col gap-[5px]">
                         <div className="flex flex-row gap-3">
-                            <div>img</div>
+                            <div>
+                                <Image
+                                src="/phone.png"
+                                alt="Image"
+                                width={12.82}
+                                height={16.47}
+                                />
+                            </div>
                             <div className="text-black Headline_7_SemiBold">Phone</div>
                         </div>
                         <div className="text-gray Paragraph_2_Regular">
@@ -59,7 +73,14 @@ const Form = () => {
                     </div>
                     <div className="flex flex-col gap-[5px]">
                         <div className="flex flex-row gap-3">
-                            <div>img</div>
+                            <div>
+                                <Image
+                                src="/location.png"
+                                alt="Image"
+                                width={15}
+                                height={17.48}
+                                />
+                            </div>
                             <div className="text-black Headline_7_SemiBold">Address</div>
                         </div>
                         <div className="text-gray Paragraph_2_Regular">
@@ -70,10 +91,10 @@ const Form = () => {
             </div>
             <div>
                 <Image
-                    src="/img_block.jpg"
+                    src="/map.jpg"
                     alt="logo"
                     width={'1920px'}
-                    height={'590px'}
+                    height={'460px'}
                     className="relative"
                 />
             </div>
