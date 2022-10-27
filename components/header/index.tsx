@@ -40,7 +40,7 @@ const Header = () =>{
                         <div className="">Blog</div>
                     </a>
                 </Link>
-                <Link href="/">
+                <Link href="/Contacts">
                     <a>
                         <div className="">contacts</div>
                     </a>
