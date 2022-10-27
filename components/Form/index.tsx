@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link'
 
 const Form = () => {
     return (
@@ -34,19 +35,23 @@ const Form = () => {
                     </div>
                 </div>
                 <div className="flex justify-end pt-5">
-                    <div className="bg-primary py-2.5 px-[50px] rounded-md Headline_7_SemiBold text-white ">
-                        Send
-                    </div>
+                    <Link href="/">
+                        <a>
+                            <div className="bg-primary py-2.5 px-[50px] rounded-md Headline_7_SemiBold text-white ">
+                                Send
+                            </div>
+                        </a>
+                    </Link>
                 </div>
                 <div className="flex flex-row gap-[47px]">
                     <div className="flex flex-col gap-[5px]">
                         <div className="flex flex-row gap-3">
                             <div>
                                 <Image
-                                src="/mail.png"
-                                alt="Image"
-                                width={15}
-                                height={12.5}
+                                    src="/mail.png"
+                                    alt="Image"
+                                    width={15}
+                                    height={12.5}
                                 />
                             </div>
                             <div className="text-black Headline_7_SemiBold">Email</div>
@@ -59,10 +64,10 @@ const Form = () => {
                         <div className="flex flex-row gap-3">
                             <div>
                                 <Image
-                                src="/phone.png"
-                                alt="Image"
-                                width={12.82}
-                                height={16.47}
+                                    src="/phone.png"
+                                    alt="Image"
+                                    width={12.82}
+                                    height={16.47}
                                 />
                             </div>
                             <div className="text-black Headline_7_SemiBold">Phone</div>
@@ -75,10 +80,10 @@ const Form = () => {
                         <div className="flex flex-row gap-3">
                             <div>
                                 <Image
-                                src="/location.png"
-                                alt="Image"
-                                width={15}
-                                height={17.48}
+                                    src="/location.png"
+                                    alt="Image"
+                                    width={15}
+                                    height={17.48}
                                 />
                             </div>
                             <div className="text-black Headline_7_SemiBold">Address</div>
