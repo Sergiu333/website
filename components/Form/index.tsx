@@ -23,12 +23,11 @@ const Form = () => {
                                className="w-full border border-gray rounded-md pl-[25px] py-[15px] text-black Paragraph_3_SemiBold"
                                placeholder="Theme" required/>
                     </div>
-                <div>
+                    <div>
                     <textarea id="first_name"
-                           className="h-[140px] resize-none w-full border border-gray rounded-md pl-[25px] py-[15px] text-black Paragraph_3_SemiBold"
-                           placeholder="Your message" required/>
-                </div>
-
+                              className="h-[140px] resize-none w-full border border-gray rounded-md pl-[25px] py-[15px] text-black Paragraph_3_SemiBold"
+                              placeholder="Your message" required/>
+                    </div>
                 </div>
             </div>
             <div className="flex justify-end pt-5">
