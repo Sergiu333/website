@@ -1,61 +1,115 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
+import {useState} from 'react';
 
-const Header = () =>{
+
+export default function Home() {
+    const [navbar, setNavbar] = useState(false);
     return (
-        <div className="container mx-auto w-[1110px] py-10 bg-white flex flex-row gap-36 text-sm items-center">
-            <Link href="/">
-                <a>
-                    <Image
-                        src="/logo.png"
-                        alt="logo"
-                        width={170}
-                        height={50}
-                    />
-                </a>
-            </Link>
-            <div className="flex flex-row gap-10">
-                <Link href="/">
-                    <a>
-                        <div className="">Home</div>
-                    </a>
-                </Link>
-                <Link href="/">
-                    <a>
-                        <div className="">Solutions</div>
-                    </a>
-                </Link>
-                <Link href="/">
-                    <a>
-                        <div className="">Pages</div>
-                    </a>
-                </Link>
-                <Link href="/">
-                    <a>
-                        <div className="">Elements</div>
-                    </a>
-                </Link>
-                <Link href="/Blog">
-                    <a>
-                        <div className="">Blog</div>
-                    </a>
-                </Link>
-                <Link href="/Contacts">
-                    <a>
-                        <div className="">contacts</div>
-                    </a>
-                </Link>
-            </div>
-            <Link href="/">
-                <a>
-                    <button className="h-11 w-[168px]  bg-[#185CFF] rounded-md text-white flex items-center">
-                        <img className="mx-2.5" src="play.png" alt="play button" width={24} height={24}/>
-                        Watch the demo
-                    </button>
-                </a>
-            </Link>
-
+        <div className="  mx-auto w-[1110px] py-10 bg-white flex flex-row gap-36 text-sm items-center">
+            <nav className="w-full">
+                <div className="px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 justify-between">
+                    <div>
+                        <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                            <Link href="/">
+                                <a>
+                                    <Image
+                                        src="/logo.png"
+                                        alt="logo"
+                                        width={170}
+                                        height={50}
+                                    />
+                                </a>
+                            </Link>
+                            <div className="md:hidden">
+                                <button
+                                    className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                    onClick={() => setNavbar(!navbar)}
+                                >
+                                    {navbar ? (
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="w-6 h-6 "
+                                            viewBox="0 0 20 20"
+                                            fill="#185CFF"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                clipRule="evenodd"
+                                            />
+                                        </svg>
+                                    ) : (
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="w-6 h-6 "
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="#185CFF"
+                                            strokeWidth={2}
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                d="M4 6h16M4 12h16M4 18h16"
+                                            />
+                                        </svg>
+                                    )}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                                navbar ? 'block' : 'hidden'
+                            }`} >
+                            <ul className="items-center justify-center py-8 md:flex md:gap-8">
+                                <li className="">
+                                    <Link href="/">
+                                        <a>Home</a>
+                                    </Link>
+                                </li>
+                                <li className="">
+                                    <Link href="/Solutions">
+                                        <a>Solutions</a>
+                                    </Link>
+                                </li>
+                                <li className="">
+                                    <Link href="/Pages">
+                                        <a>Pages</a>
+                                    </Link>
+                                </li>
+                                <li className="">
+                                    <Link href="/Elements">
+                                        <a>Elements</a>
+                                    </Link>
+                                </li>
+                                <li className="">
+                                    <Link href="/Blog">
+                                        <a>Blog</a>
+                                    </Link>
+                                </li>
+                                <li className="">
+                                    <Link href="/Contacts">
+                                        <a>Contacts</a>
+                                    </Link>
+                                </li>
+                                <li className="hidden md:block">
+                                    <Link href="/">
+                                        <a>
+                                            <button className="ml-[145px] h-11 w-[168px]  bg-[#185CFF] rounded-md text-white flex items-center">
+                                                <img className="mx-2.5" src="play.png" alt="play button" width={24} height={24}/>
+                                                Watch the demo
+                                            </button>
+                                        </a>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-    )
+    );
 }
-export default Header;

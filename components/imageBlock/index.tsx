@@ -6,15 +6,15 @@ const ImageBlock = () =>{
         <div className="pt-[90px]">
             <Link href="/">
                 <a>
-                    <button className="absolute left-[920px] z-50 top-[320px] absolute w-[140px] h-[140px] bg-white rounded-full flex items-center justify-center text-white text-sm leading-6 font-semibold">
-                        <div className="bg-[#185CFF] w-[120px] h-[120px] rounded-full flex items-center justify-center">
-                            <div className="bg-white w-[104px] h-[104px] rounded-full flex items-center justify-center">
-                                <div className="bg-[#185CFF] w-[102px] h-[102px] rounded-full flex items-center justify-center">
-                                    Learn more
-                                </div>
-                            </div>
-                        </div>
-                    </button>
+                    {/*<button className="absolute lg:right-[20%] 2xl:right-[30%] 3xl:right-[33%] z-50 top-[320px] absolute w-[140px] h-[140px] bg-white rounded-full flex items-center justify-center text-white text-sm leading-6 font-semibold">*/}
+                    {/*    <div className="bg-[#185CFF] w-[120px] h-[120px] rounded-full flex items-center justify-center">*/}
+                    {/*        <div className="bg-white w-[104px] h-[104px] rounded-full flex items-center justify-center">*/}
+                    {/*            <div className="bg-[#185CFF] w-[102px] h-[102px] rounded-full flex items-center justify-center">*/}
+                    {/*                Learn more*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</button>*/}
                 </a>
             </Link>
             <div className="relative bottom-11">
